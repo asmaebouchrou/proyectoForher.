@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForHer - Iniciar Sesión</title>
+    <link rel="icon" href="img/logo6.png" type="image/png">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/log.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <!-- Botón de volver atrás -->
+    <a href="index.html" class="back-button">
+        <i class="ri-arrow-left-line"></i> Volver al inicio
+    </a>
+
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="img/logim.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Cada nueva joya es una <br> nueva historia</span>
+                    <span class="text-2">Conecta con tu estilo</span>
+                </div>
+            </div>
+            <div class="back">
+                <img src="img/logim.jpg" alt="">
+                <div class="text">
+                    <span class="text-1">Regístrate y descubre <br> ofertas exclusivas</span>
+                    <span class="text-2">Únete a nuestra comunidad</span>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Iniciar Sesión</div>
+                    
+                    <!-- Login con redes sociales -->
+                  
+                  
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="ri-mail-line"></i>
+                                <input type="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="ri-lock-line"></i>
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="text"><a href="#">¿Olvidaste tu contraseña?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="Iniciar Sesión">
+                            </div>
+                            <div class="text sign-up-text">¿No tienes cuenta? <label for="flip">Regístrate ahora</label></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <div class="title">Registro</div>
+                    
+                  
+                    <form action="#">
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="ri-user-line"></i>
+                                <input type="text" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="ri-mail-line"></i>
+                                <input type="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="ri-lock-line"></i>
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="ri-lock-line"></i>
+                                <input type="password" placeholder="Confirmar contraseña" required>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="Registrarse">
+                            </div>
+                            <div class="text login-text">¿Ya tienes cuenta? <label for="flip">Inicia sesión</label></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Efecto hover para botones sociales
+        document.querySelectorAll('.social-btn').forEach(btn => {
+            btn.addEventListener('mouseover', function() {
+                this.style.transform = 'translateY(-3px)';
+                this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+            
+            btn.addEventListener('mouseout', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+        
+        // Efecto para el botón de volver
+        const backBtn = document.querySelector('.back-button');
+        backBtn.addEventListener('mouseover', () => {
+            backBtn.style.transform = 'translateX(-5px)';
+        });
+        backBtn.addEventListener('mouseout', () => {
+            backBtn.style.transform = 'translateX(0)';
+        });
+    </script>
+</body>
+</html>

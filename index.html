@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForHer - Joyería Elegante</title>
+    <link rel="icon" href="img/logo6.png" type="image/png">
+
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="fixed w-full z-50 transition-all duration-700 text-white">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- logo6 -->
+            <div class="flex-1">
+                <a href="#" class="font-pacifico text-3xl">ForHer</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="index.html" id="espacio" class="text-white hover:text-secondary transition-colors">Inicio</a>
+                <a href="coleccion.html" id="espacio" class="text-white hover:text-secondary transition-colors">Colección</a>
+                <a href="nosotros.html" id="espacio" class="text-white hover:text-secondary transition-colors">Nosotros</a>
+                <a href="contacto.html" id="espacio" class="text-white hover:text-secondary transition-colors">Contacto</a>
+                <a href="log.html" id="espacio" class="w-10 h-10 flex items-center justify-center text-secondary hover:text-primary transition"><i class="ri-user-line ri-lg"></i></a>
+            </nav>
+    
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="ri-menu-line ri-2x"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-95 z-40 pt-20">
+            <div class="container mx-auto px-4 flex flex-col space-y-6">
+                <a href="index.html" class="text-white hover:text-secondary transition-colors py-3 text-xl" style="color: #000000;">Inicio</a>
+                <a href="coleccion.html" class="text-white hover:text-secondary transition-colors py-3 text-xl" style="color: #000000;">Colección</a>
+                <a href="nosotros.html" class="text-white hover:text-secondary transition-colors py-3 text-xl" style="color: #000000;">Nosotros</a>
+                <a href="index.html" class="text-white hover:text-secondary transition-colors py-3 text-xl" style="color: #000000;">Contacto</a>
+                <a href="log.html" class="text-white hover:text-secondary transition-colors py-3 text-xl" style="color: #000000;">Mi Cuenta</a>
+            </div>
+        </div>
+    </header>
+
+   <!-- Hero Section -->
+<section class="hero-section w-full h-screen flex items-center relative overflow-hidden">
+    <!-- Video de fondo -->
+    <video autoplay muted loop playsinline class="absolute z-0 w-full h-full object-cover">
+        <source src="multimedia/vid9.mp4" type="video/mp4">
+        <!-- Puedes agregar fuentes alternativas aquí -->
+    </video>
+    
+    <!-- Overlay oscuro para mejorar legibilidad del texto -->
+    <div class="absolute inset-0 bg-gray-700 bg-opacity-40 z-1"></div>
+    
+    <!-- Contenido -->
+    <div class="container mx-auto px-4 z-10 w-full">
+        <div class="max-w-2xl fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Joyería Exclusiva Para Momentos Especiales</h1>
+            <p class="text-xl text-white mb-8">Diseños únicos que celebran la belleza y elegancia de cada mujer</p>
+            <a href="coleccion.html"><button class="bg-white text-primary px-8 py-3 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Descubre Nuestra Colección</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Ventajas Section -->
+     
+    <!--Galery section-->
+    
+   
+
+
+
+    <!-- Categories Section -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Categorías</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="category-card relative rounded-lg overflow-hidden transition-all duration-300 h-80" style="background-image: url(img/anillo3.jpg); background-size: 450px;">
+                    <div class="absolute inset-0 bg-gray-700 bg-opacity-40 flex flex-col items-center justify-center p-6">
+                        <h3 class="text-2xl font-bold text-white mb-4">Anillos</h3>
+                        <a href="coleccion.html#anillos">
+                            <button class="bg-white text-primary px-6 py-2 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Ver Colección</button>
+                          </a>                    </div>
+                </div>
+                
+                <div class="category-card relative rounded-lg overflow-hidden transition-all duration-300 h-80" style="background-image: url(img/gal4.jpg); background-size: 480px;">
+                    <div class="absolute inset-0 bg-gray-700 bg-opacity-40 flex flex-col items-center justify-center p-6">
+                        <h3 class="text-2xl font-bold text-white mb-4">Collares</h3>
+                        <a href="coleccion.html#collares"> <button class="bg-white text-primary px-6 py-2 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Ver Colección</button>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="category-card relative rounded-lg overflow-hidden transition-all duration-300 h-80"  style="background-image: url(img/pendientes2.jpg); background-size: 450px;">
+                    <div class="absolute inset-0 bg-gray-700 bg-opacity-40 flex flex-col items-center justify-center p-6">
+                        <h3 class="text-2xl font-bold text-white mb-4">Pendientes</h3>
+                        <a href="coleccion.html#pendientes">
+                            <button class="bg-white text-primary px-6 py-2 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Ver Colección</button>
+                          </a>                    </div>
+                </div>
+                
+                <div class="category-card relative rounded-lg overflow-hidden transition-all duration-300 h-80" style="background-image: url(img/pulsera1.jpg); background-size: 450px;">
+                    <div class="absolute inset-0 bg-gray-700 bg-opacity-40 flex flex-col items-center justify-center p-6">
+                        <h3 class="text-2xl font-bold text-white mb-4">Pulseras</h3>
+                        <a href="coleccion.html#pulseras">
+                            <button class="bg-white text-primary px-6 py-2 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap">Ver Colección</button>
+                          </a>                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Gallery Section -->
+<section class="py-16 md:py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Nuestras Creaciones</h2>
+        
+        <!-- Grid Gallery -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <!-- Item 1 -->
+            <div class="gallery-item relative overflow-hidden rounded-lg group h-64">
+                <img src="img/model3.jpg" alt="Anillo de diamantes" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-bold text-xl mb-2">Anillo Esmeralda</h3>
+                        <button class="bg-secondary text-primary px-6 py-2 rounded-button hover:bg-opacity-90 transition-all">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 2 -->
+            <div class="gallery-item relative overflow-hidden rounded-lg group h-64">
+                <img src="img/model5.jpg" alt="Collar de perlas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-bold text-xl mb-2">Collar Diamante</h3>
+                        <button class="bg-secondary text-primary px-6 py-2 rounded-button hover:bg-opacity-90 transition-all">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 3 -->
+            <div class="gallery-item relative overflow-hidden rounded-lg group h-64">
+                <img src="img/mod5.jpg" alt="Pendientes de oro" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-bold text-xl mb-2">Pendientes Rubí</h3>
+                        <button class="bg-secondary text-primary px-6 py-2 rounded-button hover:bg-opacity-90 transition-all">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Item 4 -->
+            <div class="gallery-item relative overflow-hidden rounded-lg group h-64">
+                <img src="img/mod2.jpg" alt="Pulsera de plata" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-bold text-xl mb-2">Pulsera Zafiro</h3>
+                        <button class="bg-secondary text-primary px-6 py-2 rounded-button hover:bg-opacity-90 transition-all">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ver más -->
+        <div class="text-center mt-12">
+           <a href="coleccion.html">
+            <button id="galerry" class="bg-primary text-white px-8 py-3 font-medium rounded-button hover:bg-opacity-90 transition-all inline-flex items-center">
+                Ver Colección Completa
+                <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+           </a>
+        </div>
+    </div>
+</section>
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Lo Que Dicen Nuestras Clientas</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-secondary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Las joyas de ForHer son simplemente espectaculares. Compré un anillo para mi aniversario y no podría estar más feliz. La calidad es excepcional y el diseño es único."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Lucía Martínez</h4>
+                            <p class="text-gray-500 text-sm">Madrid</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-secondary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"El servicio de atención al cliente es impecable. Me ayudaron a elegir el collar perfecto para mi boda y llegó en menos de 24 horas. Totalmente recomendable."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Carmen Rodríguez</h4>
+                            <p class="text-gray-500 text-sm">Barcelona</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-secondary">
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                            <i class="ri-star-fill ri-lg"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"He comprado varias piezas y cada una es más hermosa que la anterior. La calidad es excepcional y los diseños son verdaderamente únicos. ForHer se ha convertido en mi joyería de confianza."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <h4 class="font-semibold">Elena Fernández</h4>
+                            <p class="text-gray-500 text-sm">Valencia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 md:py-24 bg-gray-700 text-white">
+        <div class="container mx-auto px-4" >
+            <div class="max-w-2xl mx-auto text-center" >
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Únete a Nuestra Comunidad</h2>
+                <p class="text-gray-300 mb-8">Suscríbete para recibir novedades, ofertas exclusivas y consejos de estilo</p>
+                
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-4 py-3 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-secondary text-black"  style="padding: 15px; width: 80%; border: none;">
+                    <button id="phone" type="submit" class="bg-secondary text-black px-8 py-3 font-medium rounded-button hover:bg-opacity-90 transition-all whitespace-nowrap" style="width: 20%; border-radius: 10px; background-color: #FFC0CB; border: none;" >Suscribirme</button>
+                </form>
+                
+                <input type="checkbox" class="acept"> Acepto recibir comunicaciones comerciales y la <a href="#">Política de Privacidad</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer  class="bg-gray-100 py-12">
+        <div  class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Columna 1 - logo6 y descripción -->
+                <div>
+                    <a href="index.html" class="font-['Pacifico'] text-3xl text-black mb-6 inline-block">ForHer</a>
+                    <p class="text-gray-600 mb-6">Joyería exclusiva diseñada para realzar la belleza natural de cada mujer.</p>
+                    
+                    <div class="flex space-x-4">
+                        <a  id="redes" href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-secondary hover:text-gray-700 transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a  id="redes" href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-secondary hover:text-gray-700 transition-colors">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a id="redes" href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-700 text-white hover:bg-secondary hover:text-gray-700 transition-colors">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2 - Enlaces rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-600 hover:text-black transition-colors">Inicio</a></li>
+                        <li><a href="coleccion.html" class="text-gray-600 hover:text-black transition-colors">Colección</a></li>
+                        <li><a href="nosotros.html" class="text-gray-600 hover:text-black transition-colors">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html" class="text-gray-600 hover:text-black transition-colors">Contacto</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-black transition-colors">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 - Información de contacto -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contacto</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span class="text-gray-600">Calle, *****, Jaén, España</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <span class="text-gray-600">+34 912 000 000</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-5 h-5 flex items-center justify-center mt-1 mr-3">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span class="text-gray-600">info@forher.es</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-3">Métodos de Pago</h4>
+                        <div  id="pay" class="flex space-x-3">
+                            <i id="pay1" class="ri-visa-fill ri-lg"></i>
+                            <i id="pay1" class="ri-mastercard-fill ri-lg"></i>
+                            <i id="pay1" class="ri-paypal-fill ri-lg"></i>
+                            <i id="pay1" class="ri-bank-card-fill ri-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 ForHer Joyería. Creada por ASMAE BOUCHROU</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+   
+</body>
+</html>
